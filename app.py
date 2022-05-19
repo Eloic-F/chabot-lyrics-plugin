@@ -4,6 +4,7 @@ import tensorflow as tf
 import gc
 import numpy
 from pluginFactory import PluginFactory
+from plugins.lyrics.plugin import PluginLyrics
 
 def analyse(sentence):
     subjects, types, stopwords, dictionnary = tools.defaultValues()
@@ -29,8 +30,11 @@ def analyse(sentence):
     gc.collect()
     return resultS[0], resultT[0], resultV[0][0]
 
-def searchAnswer(sentence, subject, typeS):
-    plugin = PluginFactory.getPlugin(subject, typeS)
+def searchAnswer(sentence, subject, typeS, context):
+    if(context=="lyrics"):
+        plugin= PluginLyrics(subject, typeS)
+    else:
+        plugin = PluginFactory.getPlugin(subject, typeS)
     return plugin.response(sentence)
     
 if __name__ == '__main__':

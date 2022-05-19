@@ -25,7 +25,7 @@ class PluginLyrics(PluginDefault):
         #version 1
         if artistName is None and firstCall:
             firstCall = False  
-            return "Entrez nom artiste"
+            return "Entrez un nom artiste"
 
         elif artistName is None:
             artistName= sentence

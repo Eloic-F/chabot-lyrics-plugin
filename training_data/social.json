@@ -1,35 +1,28 @@
 [{
     "subject":"sayHello",
-    "sentences": ["Bonjour"],
-    "responses": ["Bonjour"],
+    "sentences": ["Bonjour", "bjr"],
+    "responses": ["Bonjour", "bjr"],
     "value": 1,
     "type":"action"
 },
 {
     "subject":"sayHello",
-    "sentences": ["Salam aleykoum", "salut", "slt", "salem"],
-    "responses": ["Aleykoum salam", "salut", "slt", "salem"],
+    "sentences": ["salut", "slt"],
+    "responses": ["salut", "slt"],
     "value":2,
     "type":"action"
 },
 {
     "subject":"howAreYou",
-    "sentences": ["Comment vas-tu", "Tu vas bien"],
-    "responses": ["ça va"],
+    "sentences": ["Comment vas-tu", "Tu vas bien", "Comment allez-vous", "Comment ça va"],
+    "responses": ["ça va", "ça va plutôt bien", "Assez bien", "Pas trop mal", "Je vais bien aujourd'hui", "Tranquillement"],
     "value": 1,
     "type":"question"
 },
 {
     "subject":"howAreYou",
-    "sentences": ["Bien ou quoi", "Tranquille ou quoi"],
-    "responses": ["Hamdoula, bien merci", "Je vais bien, merci", "Tranquillement"],
-    "value": 2,
-    "type":"question"
-},
-{
-    "subject":"howAreYou",
     "sentences": ["Et toi", "Et vous"],
-    "responses": ["Hamdoula, bien merci", "Je vais bien, merci", "Tranquillement"],
+    "responses": ["bien merci", "Je vais bien, merci", "Tranquillement"],
     "value": 2,
     "type":"question"
 },
@@ -84,24 +77,4 @@
     "responses": ["de rien", "je t’en prie"],
     "value": 2,
     "type":"information"
-},{
-    "subject":"father",
-    "sentences": ["Qui est ton père?", "Qui est ton créateur"],
-    "responses": ["Joan François"],
-    "value": 2,
-    "type":"question"
-},{
-    "subject":"injured",
-    "sentences": ["T'es un ouf", "T'es narvalo", "vas te faire foutre"],
-    "responses": ["Je ne pense pas", "Calme tes mots si il te plait"],
-    "value": -1,
-    "type":"information"
-},
-{
-    "subject":"injuredMax",
-    "sentences": ["Connard", "Salope", "vas niquer ta mère", "fils de pute", "petite pute"],
-    "responses": ["Reste polie enfoirer", "Je suis indiférent aux insultes des cons"],
-    "value": -2,
-    "type":"information"
-}
-]
+}]

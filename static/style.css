@@ -12,17 +12,12 @@ body {
     background-size: cover;
 }
 
-h1{
+header{
     color:white;
     text-align: center;
 }
 
-h2{
-    color:white;
-    text-align: center;   
-}
-
-h4{
+h5{
     position: absolute;
     color: white;
     top: 90%;
